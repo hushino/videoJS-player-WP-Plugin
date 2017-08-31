@@ -1,10 +1,13 @@
+The idea of this plugin for wordpress is to keep the videojs up to date, since the other plugins do not bother to update it.
+Current version of videojs library: v6.2.7
+
 === Videojs Player ===
 Contributors: Hushino
 Donate link: https://github.com/hushino
 Tags: video, wpvideo, flash, html5, iPad, iphone, ipod, mobile, playlists, embed video, videojs, flash player, player, video player, embed, lightweight, minimal, myvideo, responsive  
 Requires at least: 4.4
 Tested up to: 4.8
-Stable tag: 1.9.0
+Stable tag: 6.2.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -123,7 +126,7 @@ Yes.
 
 == Changelog ==
 
-= 1.9.0 =
+= 6.2.7 =
 
 * Updated the Videojs library to v6.2.7
 
