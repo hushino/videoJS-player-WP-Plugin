@@ -1,5 +1,5 @@
 The idea of this plugin for wordpress is to keep the videojs up to date, since the other plugins do not bother to update it.
-Current version of videojs library: v6.2.7
+Current version of videojs library and this plugin: v6.2.7
 
 === Videojs Player ===
 Contributors: Hushino
