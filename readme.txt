@@ -1,6 +1,5 @@
 === Videojs HTML5 Player ===
-Contributors: naa986
-Donate link: https://wphowto.net/
+Contributors: naa986,Hushino
 Tags: videojs, video, player, embed, html5
 Requires at least: 4.2
 Tested up to: 5.1.1
@@ -111,7 +110,7 @@ For detailed documentation please visit the [Videojs HTML5 Player](https://wphow
 
 1. Go to the Add New plugins screen in your WordPress Dashboard
 1. Click the upload tab
-1. Browse for the plugin file (videojs-html5-player.zip) on your computer
+1. Browse for the plugin file (videojs-html5-player-2.zip) on your computer
 1. Click "Install Now" and then hit the activate button
 
 == Frequently Asked Questions ==
@@ -138,7 +137,7 @@ none
 == Changelog ==
 = 2.0.0 =
 
-* Videojs upto v7.5.0
+* Videojs update to v7.5.0
 
 = 1.1.3 =
 

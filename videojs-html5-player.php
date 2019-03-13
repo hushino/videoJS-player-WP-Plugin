@@ -2,7 +2,7 @@
 /*
 Plugin Name: Videojs HTML5 Player 2
 Version: 2.0.0
-Plugin URI: https://wphowto.net/videojs-html5-player-for-wordpress-757
+Plugin URI: https://github.com/hushino/videoJS-player-WP-Plugin
 Author: Hushino
 Author URI: https://github.com/hushino
 Description: Easily embed videos using videojs html5 player 2
