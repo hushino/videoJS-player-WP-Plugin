@@ -1,23 +1,26 @@
-The idea of this plugin for wordpress is to keep the videojs up to date, since the other plugins do not bother to update it.
-Current version of videojs library and this plugin: v6.2.7
-
-=== Videojs Player ===
-Contributors: Hushino
-Donate link: https://github.com/hushino
-Tags: video, wpvideo, flash, html5, iPad, iphone, ipod, mobile, playlists, embed video, videojs, flash player, player, video player, embed, lightweight, minimal, myvideo, responsive  
-Requires at least: 4.4
-Tested up to: 4.8
-Stable tag: 6.2.7
+=== Videojs HTML5 Player ===
+Contributors: naa986
+Donate link: https://wphowto.net/
+Tags: videojs, video, player, embed, html5
+Requires at least: 4.2
+Tested up to: 5.1.1
+Stable tag: 2.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Embed video file beautifully in WordPress using Videojs Player. Embed HTML5 compatible responsive video in your post/page with video js.
+Embed video file beautifully in WordPress using Videojs HTML5 Player. Embed HTML5 compatible responsive video in your post/page with video js.
 
 == Description ==
 
-[VideoJS Player](https://github.com/hushino) is a user-friendly plugin that supports video playback on desktops and mobile devices. It makes super easy for you to embed both self-hosted video files or video files that are externally hosted using Videojs library.
+[Videojs HTML5 Player](https://wphowto.net/videojs-html5-player-for-wordpress-757) is a user-friendly plugin that supports video playback on desktops and mobile devices. It makes super easy for you to embed both self-hosted video files or video files that are externally hosted using Videojs library.
 
-= Videojs Player Features =
+https://www.youtube.com/watch?v=uF-V6qGvcu8&rel=0
+
+= Requirements =
+
+* A self-hosted website running on [WordPress hosting](https://wphowto.net/best-cheap-wordpress-hosting-1689)
+
+= Videojs HTML5 Player Features =
 
 * Embed MP4 video files into a post/page or anywhere on your WordPress site
 * Embed responsive videos for a better user experience while viewing from a mobile device
@@ -31,11 +34,11 @@ Embed video file beautifully in WordPress using Videojs Player. Embed HTML5 comp
 * Clean and sleek player with no watermark
 * fallbacks for other HTML5-supported filetypes (WebM, Ogv)
 
-= VideoJS Player Plugin Usage =
+= Videojs HTML5 Player Plugin Usage =
 
 In order to embed a video create a new post/page and use the following shortcode:
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4"]`
 
 Here, "url" is the location of the MP4 video source file (H.264 encoded). You need to replace the sample URL with the actual URL of the video file.
 
@@ -47,19 +50,19 @@ The following options are supported in the shortcode.
 
 You can specify a WebM video file in addition to the source MP4 video file. This parameter is optional.
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" webm="http://example.com/wp-content/uploads/videos/myvid.webm"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" webm="http://example.com/wp-content/uploads/videos/myvid.webm"]`
 
 **Ogv**
 
 You can specify a Ogv video file in addition to the source MP4 & WebM video files. This parameter is optional.
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" webm="http://example.com/wp-content/uploads/videos/myvid.webm" ogv="http://example.com/wp-content/uploads/videos/myvid.ogv"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" webm="http://example.com/wp-content/uploads/videos/myvid.webm" ogv="http://example.com/wp-content/uploads/videos/myvid.ogv"]`
 
 **Width**
 
 Defines the width of the video file (Height is automatically calculated). This option is not required unless you want to limit the maximum width of the video.
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" width="480"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" width="480"]`
 
 **Preload**
 
@@ -68,13 +71,13 @@ Specifies if and how the video should be loaded when the page loads. Defaults to
 * "metadata" - only metadata should be loaded when the page loads
 * "none" - the video should not be loaded when the page loads
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" preload="metadata"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" preload="metadata"]`
 
 **Controls**
 
 Specifies that video controls should be displayed. Defaults to "true". In order to hide controls set this parameter to "false".
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" controls="false"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" controls="false"]`
 
 When you disable controls users will not be able to interact with your videos. So It is recommended that you enable autoplay for a video with no controls.
 
@@ -88,25 +91,27 @@ Causes the video file to automatically play when the page loads.
 
 Defines image to show as placeholder before the video plays.
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" poster="http://example.com/wp-content/uploads/poster.jpg"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" poster="http://example.com/wp-content/uploads/poster.jpg"]`
 
 **Loop**
 
 Causes the video file to loop to beginning when finished and automatically continue playing.
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" loop="true"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" loop="true"]`
 
 **Muted**
 
 Specifies that the audio output of the video should be muted.
 
-`[videojs_video url="http://example.com/wp-content/uploads/videos/myvideo.mp4" muted="true"]`
+`[videojs_video url="http://example.com/wp-content/uploads/videos/myvid.mp4" muted="true"]`
+
+For detailed documentation please visit the [Videojs HTML5 Player](https://wphowto.net/videojs-html5-player-for-wordpress-757) plugin page
 
 == Installation ==
 
 1. Go to the Add New plugins screen in your WordPress Dashboard
 1. Click the upload tab
-1. Browse for the plugin file (videojs-player.zip) on your computer
+1. Browse for the plugin file (videojs-html5-player.zip) on your computer
 1. Click "Install Now" and then hit the activate button
 
 == Frequently Asked Questions ==
@@ -123,13 +128,69 @@ Yes.
 
 Yes.
 
+== Screenshots ==
+
+1. Videojs Player Demo
+
+== Upgrade Notice ==
+none
 
 == Changelog ==
+= 2.0.0 =
 
-= 6.2.7 =
+* Videojs upto v7.5.0
 
-* Updated the Videojs library to v6.2.7
+= 1.1.3 =
+
+* Videojs play button is now centered by default.
+
+= 1.1.2 =
+
+* Videojs HTML5 Player is now compatible with WordPress 4.9.
+
+= 1.1.1 =
+
+* Added support for playsinline attribute which allows a video to play inline on iOS (the video will not automatically enter fullscreen mode when playback begins).
 
 = 1.1.0 =
+
+* Videojs script is now enqueued in the footer to avoid a JavaScript setup error.
+
+= 1.0.9 =
+
+* Made jQuery a dependency for the videojs script.
+
+= 1.0.8 =
+
+* Updated the translation files so the plugin can take advantage of language packs.
+* Videojs HTML5 Player is now compatible with WordPress 4.4.
+
+= 1.0.7 =
+
+* Added a new shortcode parameter to accept Ogv as a video source format.
+
+= 1.0.6 =
+
+* Added a new shortcode parameter to accept WebM as a video source format.
+
+= 1.0.5 =
+
+* Updated the Videojs library to 5.0.0
+
+= 1.0.4 =
+
+* Videojs HTML5 Player is now compatible with WordPress 4.3
+
+= 1.0.3 =
+
+* Added an option to mute the audio output of a video
+* Added an option to loop a video
+
+= 1.0.2 =
+
+* Added an option to show/hide controls
+* Added an option to set preload attribute
+
+= 1.0.1 =
 
 * First commit
